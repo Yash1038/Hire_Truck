@@ -1,0 +1,326 @@
+/* .bg {
+  background-image: url("./backg.webp");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: static;
+  overflow: hidden;
+} */
+
+.home_style h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid darkslateblue; /* The typwriter cursor */
+  width: 84%;
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    remove-cursor 0s 3.4s forwards,
+    blink-caret 1s step-end;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 85% }
+}
+
+@keyframes remove-cursor {
+  to { border-right: none; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  65% { border-color: darkslateblue; }
+}
+
+.reddit_style {
+  background-size: "cover";
+  background-color:moccasin;
+  height: 100vh;
+  background-repeat:no-repeat; 
+}
+
+.login_style {
+    background-size: "cover";
+    background-color:skyblue;
+    height: 80vh;
+    width: 10;
+    max-width: 600px;
+    background-repeat:no-repeat; 
+    border-radius: 100px;
+}
+
+.login_id {
+font-size: 40px;
+/* font-style:italic; */
+text-decoration: underline;
+color: red;
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.agreement{
+font-size: 25px;
+color:royalblue;
+font-style: italic;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,cursive;
+}
+
+.home_style {
+margin-top: 5%;
+color: darkslateblue;
+text-align: center;
+font-family: 'Pacifico',cursive;
+font-size: 10px;
+} 
+
+.home_style_bg {
+/* background-image: url("./home1.jpg"); */
+/* background-color: rgba(208, 250, 24, 0.712); */
+background-color: rgb(179, 200, 226);
+background-position: center;
+background-size: cover;
+width: 100%;
+height: 100vh;
+position: static;
+overflow: hidden;
+} 
+
+.inputform{
+font-size: 20px;
+font-family: 'Pacifico' ,cursive ;
+color: black;
+}
+
+.editable_style {
+/* text-align: center; */
+font-size: 30px; 
+} 
+
+.intro_style {
+text-align: center;
+font-size: 50px; 
+font-style: italic;
+font-family: 'Pacifico' ,cursive ;
+text-decoration: underline;
+} 
+
+.updatebtn {
+text-align: center;
+margin-left: 200px;
+margin-top: 30px;
+background-color: skyblue;
+font-family: 'Pacifico' ,cursive ;
+cursor: pointer;
+height: 50px;
+width: 100px;
+font-size: 20px;
+border-radius: 20px;
+}
+
+.followers {
+text-align: center;
+margin-left: 200px;
+margin-top: 400px;
+background-color: skyblue;
+font-family: 'Pacifico' ,cursive ;
+cursor: pointer;
+height: 50px;
+width: 100px;
+font-size: 20px;
+border-radius: 20px;
+}
+
+.following {
+text-align: center;
+margin-left: 200px;
+margin-top: 400px;
+background-color: skyblue;
+font-family: 'Pacifico' ,cursive ;
+cursor: pointer;
+height: 50px;
+width: 100px;
+font-size: 20px;
+border-radius: 20px;
+}
+
+.inputformtext{
+box-sizing: border-box;
+height: 30px;
+width: 326px;
+border: 1px solid blue;
+border-radius: 20px;
+color: #333333;
+font-family: 'Pacifico' ,cursive ;
+font-size: 18px;
+}
+
+.app {
+padding: 30px;
+background-color: floralwhite;
+}
+
+.todo {
+align-items: center;
+display: flex;
+font-size: 18px;
+justify-content: space-between;
+}
+
+.top {
+display: flex;
+}
+
+.top2 {
+display: flex;
+}
+
+.top3 {
+display: flex;
+}
+
+.top4 {
+display: flex;
+}
+
+.top5 {
+display: flex;
+}
+
+.top6 {
+display: flex;
+}
+
+.dropdown-container {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-title {
+cursor: pointer;
+}
+
+.dropdown-toggles {
+font-family: Pacifico;
+color: black;
+border-radius: 20px;
+cursor: pointer;
+}
+
+.followdrop {
+padding-right: 10px;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: white;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content .dropdown-item {
+display: flex;
+justify-content: space-between;
+padding: 12px 16px;
+background-color: skyblue;
+}
+
+.dropdown-container:hover .dropdown-content {
+display: block;
+}
+
+.dropdown-menu {
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 1000;
+display: none;
+float: left;
+min-width: 160px;
+padding: 5px 0;
+margin: 2px 0 0;
+font-size: 14px;
+text-align: left;
+list-style: none;
+background-color: #fff;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+border: 1px solid #ccc;
+border: 1px solid rgba(0, 0, 0, .15);
+border-radius: 4px;
+-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.dropcl{
+margin-top: 300px;
+margin-left: 60px;
+display:flex;
+height: 100px;
+width: 100px;
+background-color: "yellow";
+padding: "10px";
+font-family: "Arial";
+color: "black";
+border-radius: "35px";
+border-color: black;
+}
+
+.modal-container {
+  background-color: skyblue;
+}
+
+.modal-input {
+  display: block;
+  /* display: flex; */
+  width: 75%;
+  height: 22px;
+  padding: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-input:focus {
+  outline: none;
+  border-color: #5cb85c; /* change to your preferred color */
+  box-shadow: 0 0 10px rgba(92, 184, 92, 0.5); /* change to your preferred box-shadow */
+}
+
+.alignsame {
+  display: flex;
+}
+
+.my-button {
+  background-color: yellowgreen; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.my-button:hover {
+  background-color: yellow; /* Dark green */
+  font-size: 21px;
+  letter-spacing: 1px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  transform: scale(1.08);
+}

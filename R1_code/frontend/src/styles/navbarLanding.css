@@ -1,0 +1,82 @@
+nav {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;/*added this*/
+  height: 50px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  display: inline-block; 
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color:grey;
+}
+.logo  {
+  font-size: 15px;
+  /* display: flex; */
+  text-align: left;
+  float: left; /* add this */
+  width: 1040px; /* add this */
+}
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: #00828c;
+    color: white;
+  }
+  
+  .Logo {
+    font-size: 30px;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+  }
+  
+  .home,
+  .about,
+  .freight,
+  .truck {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+   */
